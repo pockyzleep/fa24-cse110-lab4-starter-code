@@ -1,0 +1,16 @@
+app.test.tsx
+
+test('renders learn react link')
+checks the main text title to be present at the start of the page
+
+test('create an expense')
+uses fireEvent to create an expense instance to output on page and validates the budget
+
+test('delete an expense')
+uses fireEvent to delete an expense instance on page and validates the budget
+
+test('budget balance verfication: multiple instances')
+creates multiple instances to check multiple instances functioning and validates the budget
+
+test('edge case: expenses exceed budget')
+checks the threshold to see if remaining budget is negative

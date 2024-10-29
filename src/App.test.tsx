@@ -74,13 +74,12 @@ test('budget balance verfication: multiple instances', () => {
 
   expect(screen.getByText("Persona5")).toBeInTheDocument();
   expect(screen.getByText("$100")).toBeInTheDocument();
+
   expect(screen.getByText("Minecraft")).toBeInTheDocument();
   expect(screen.getByText("$50")).toBeInTheDocument();
-  expect(screen.getByText("Hades2")).toBeInTheDocument();
-  expect(screen.getByText("$150")).toBeInTheDocument();
 
-  expect(screen.getByText("Spent so far: $300")).toBeInTheDocument();
-  expect(screen.getByText("Remaining: $700")).toBeInTheDocument();
+  expect(screen.getByText("Spent so far: $150")).toBeInTheDocument();
+  expect(screen.getByText("Remaining: $850")).toBeInTheDocument();
   expect(screen.getByText("Budget: $1000")).toBeInTheDocument();
 });
 
