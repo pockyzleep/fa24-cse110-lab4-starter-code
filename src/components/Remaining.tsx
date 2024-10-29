@@ -9,10 +9,10 @@ const Remaining = () => {
     return (total = total + item.cost);
   }, 0);
 
-  const alertType = totalExpenses > budget ? "alert-danger" : "alert-success";
+  const alertType = totalExpenses > budget.value ? "alert-danger" : "alert-success";
 
   // Exercise: Create an alert when Remaining is less than 0.
-  const leftover = budget - totalExpenses;
+  const leftover = budget.value - totalExpenses;
   useEffect(() => {
     if (leftover < 0) {
       window.alert("You have exceeded your budget!")
@@ -21,7 +21,7 @@ const Remaining = () => {
 
   return (
     <div className={`alert ${alertType}`}>
-      <span>Remaining: ${budget - totalExpenses}</span>
+      <span>Remaining: ${budget.value - totalExpenses}</span>
     </div>
   );
 };
