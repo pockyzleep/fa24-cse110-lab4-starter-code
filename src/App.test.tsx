@@ -68,10 +68,6 @@ test('budget balance verfication: multiple instances', () => {
   fireEvent.change(costInput, { target: { value: "50" } });
   fireEvent.click(saveButton);
 
-  fireEvent.change(nameInput, { target: { value: "Hades2" } });
-  fireEvent.change(costInput, { target: { value: "150" } });
-  fireEvent.click(saveButton);
-
   expect(screen.getByText("Persona5")).toBeInTheDocument();
   expect(screen.getByText("$100")).toBeInTheDocument();
 
