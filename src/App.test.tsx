@@ -29,9 +29,7 @@ test('create an expense', () => {
   expect(expenseName).toBeInTheDocument();
   expect(expenseAmount).toBeInTheDocument();
   expect(totalSpent).toBeInTheDocument();
-  // expect(remainingBudget).toBeInTheDocument();
-  // lab 5 test make an invalid parameter unomit later ^^
-  expect(wrongRemainingBudget).toBeInTheDocument();
+  expect(remainingBudget).toBeInTheDocument();
 });
 
 test('delete an expense', () => {
