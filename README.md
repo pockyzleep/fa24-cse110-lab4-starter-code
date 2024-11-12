@@ -1,4 +1,4 @@
-# Note: This is for Lab 4 and 5
+# Note: This is for Lab 4-6
 
 # Getting Started with Create React App
 
